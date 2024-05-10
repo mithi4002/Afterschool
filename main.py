@@ -9,18 +9,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 st.title('Afterschool')
 
 # Load data from pickle files
-data_path = r'C:\Users\Angu\Desktop\squad cube'
-with open(os.path.join(data_path, 'data.pkl'), 'rb') as f:
-    df = pickle.load(f)
+df = pickle.load(open('data.pkl','rb'))
 
-with open(os.path.join(data_path, 'StudyLevel.pkl'), 'rb') as f:
-    study_levels = pickle.load(f)
+study_levels = pickle.load(open('StudyArea.pkl','rb'))
 
-with open(os.path.join(data_path, 'intake_month.pkl'), 'rb') as f:
-    intake_month = pickle.load(f)
+intake_month = pickle.load(open('intake_month.pkl','rb'))
 
-with open(os.path.join(data_path, 'StudyArea.pkl'), 'rb') as f:
-    study_area = pickle.load(f)
+study_area = pickle.load(open('StudyArea.pkl','rb'))
 
 # Display study level options
 st.title('What Level Do You Want to Study?')
