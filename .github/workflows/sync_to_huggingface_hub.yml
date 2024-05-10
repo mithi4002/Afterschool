@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://MithiAngu:$HF_TOKEN@huggingface.com/space/MithiAngu/Afterschool main
+        run: git push https://MithiAngu:$HF_TOKEN@huggingface.com/spaces/MithiAngu/Afterschool main
